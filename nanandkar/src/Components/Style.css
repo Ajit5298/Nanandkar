@@ -1,0 +1,251 @@
+
+.logo {
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    height: 9vh;
+    width: 100%;
+    background-color:#f2e9e9;
+}
+
+#Logo {
+    text-align: start;
+    font-size: 3vh;
+    font-weight: 600;
+    margin-left: 80px;
+    word-spacing: 8px;
+}
+
+#contact {
+    font-size: 20px;
+    font-weight: 200;
+    padding-right: 30px;
+    /* border: 1px solid red; */
+
+}
+
+#contact a {
+    color: rgb(6, 79, 248);
+
+}
+
+#svg {
+    padding-top: 10px;
+}
+
+#phone {
+    display: flex;
+}
+
+#ilogo {
+    margin-top: 10px;
+    display: flex;
+}
+
+#insta {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .logo {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    #Logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #ilogo {
+        justify-content: center;
+    }
+
+    #contact {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #phone {
+        justify-content: center;
+    }
+}
+
+#navbar {
+    width: 100%;
+    height: 10vh;
+    /* border: 1px solid red; */
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logoimg {
+    width: 18vw;
+    height: 11vh;
+}
+
+#navbar {
+    align-items: center;
+    font-family: "poppins" sans-serif;
+}
+
+#imglogo {
+    /* border: 1px solid red; */
+    width: 20vw;
+    height: 10vh;
+}
+
+#sale {
+    /* border: 1px solid red;  */
+    cursor: pointer;
+    padding: 5px 20px 5px 20px;
+}
+
+#sale:hover {
+    background-color: rgb(248, 245, 245);
+}
+
+#men {
+    /* border: 1px solid red;  */
+    cursor: pointer;
+    padding: 5px 20px 5px 20px;
+}
+
+#men:hover {
+    background-color: rgb(248, 245, 245);
+}
+
+#women {
+    /* border: 1px solid red;  */
+    cursor: pointer;
+    padding: 5px 20px 5px 20px;
+}
+
+#women:hover {
+    background-color: rgb(248, 245, 245);
+}
+
+#kids {
+    /* border: 1px solid red;  */
+    cursor: pointer;
+    padding: 5px 20px 5px 20px;
+}
+
+#kids:hover {
+    background-color: rgb(248, 245, 245);
+}
+
+#newL {
+    /* border: 1px solid red;  */
+    cursor: pointer;
+    padding: 5px 20px 5px 20px;
+}
+
+#newL:hover {
+    background-color: rgb(248, 245, 245);
+}
+
+#loginicon {
+    /* border: 1px solid red;  */
+    cursor: pointer;
+    margin-right: 30px;
+    padding: 5px 20px 5px 20px;
+}
+
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width:1400px; /* Adjust the max-width to fit your desired slider width */
+    margin: 0 auto;
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 84px;
+    color: #ffff;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .slider-button.previous {
+    left: 0;
+  }
+  
+  .slider-button.next {
+    right: 0;
+  }
+  
+  .slider-button:hover {
+    color: gold; /* Adjust the hover color as desired */
+  }
+  
+  .slider-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 600px; /* Adjust the max-height to fit your desired image height */
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .bestsellers
+  {
+    border: 1px solid red;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+  }
+  .bestsellers>div{
+    border: 1px solid red;
+    width: 15%;
+  }
+  #sibdiv1
+  {
+    border: 1px solid red;
+    height: 8vh;
+    width: 100%;
+  }
+  #sibdiv2
+  {
+    border: 1px solid red;
+    height: 25vh;
+    width: 100%;
+  }
+  #sibdiv3
+  {
+    border: 1px solid red;
+    height: 8vh;
+    width: 100%;
+  }
+  #sibdiv4
+  {
+    border: 1px solid red;
+    height: 7vh;
+    width: 100%;
+  }
+  #sibdiv5
+  {
+    border: 1px solid red;
+    height: 4vh;
+    width: 100%;
+  }
+  #imgfs
+  {
+    width: 100%;
+    height: 25vh;
+  }
+
+
+
