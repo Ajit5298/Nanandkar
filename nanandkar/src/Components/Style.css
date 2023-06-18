@@ -669,20 +669,22 @@ color: black;
   transition: border-color 0.3s ease;
  
 }
-/* .....................Men............................ */
+/* .....................Men/women/kids............................ */
 #mainmen
 {
 width: 100%;
 height: auto;
-border: 1px solid red;
+/* border: 1px solid red; */
 display: flex;
 margin-top: 2vh;
+margin-top: 20px;
+margin-bottom: 20px;
 }
 #menside
 {
 width: 21%;
 height: auto;
-border: 1px solid red;
+/* border: 1px solid red; */
 }
 #menpro
 {

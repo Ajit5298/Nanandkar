@@ -26,6 +26,21 @@ export const Navbar = () => {
         Router('/');
         alert("Logged out successfully");
       }
+      function handlemen() {
+        Router('/Men');
+      }
+      function handlewomen() {
+        Router('/Women');
+      }
+      function handlekids() {
+        Router('/Kids');
+      }
+      function handlenew() {
+        Router('/New');
+      }
+      function handlechat() {
+        Router('/Chat');
+      }
   return (
     <>
      <div id="navbar">
@@ -35,16 +50,16 @@ export const Navbar = () => {
                 <div id="sale">
                     SALE
                 </div>
-                <div id="men">
+                <div id="men" onClick={handlemen}>
                     MEN
                 </div>
-                <div id="women">
+                <div id="women" onClick={handlewomen}>
                     WOMEN
                 </div>
-                <div id="kids">
+                <div id="kids" onClick={handlekids}>
                     KIDS
                 </div>
-                <div id="newL">
+                <div id="newL" onClick={handlenew}>
                     NEWLY LAUNCHED
                 </div>
                 <div id="loginicon">
