@@ -3,8 +3,14 @@ import "../Components/Style.css"
 import { Routes, Route } from 'react-router-dom'
 import img1 from "../Components/image/logo-png.png";
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Footer } from './Footer';
+
+
 
 export const Homepage = () => {
+    const router = useNavigate();
+
     const images = [
         {
             imageUrl: 'https://staticm2.paragonfootwear.com/media/wysiwyg/homepage2021/HeroBanners/Girls_and_boys_desktop_1.jpg',
@@ -31,6 +37,21 @@ export const Homepage = () => {
             linkUrl: 'https://example1.com'
         },
     ];
+    function handlemen() {
+        Router('/Men');
+      }
+      function handlewomen() {
+        Router('/Women');
+      }
+      function handlekids() {
+        Router('/Kids');
+      }
+      function handlenew() {
+        Router('/New');
+      }
+      function handlechat() {
+        Router('/Chat');
+      }
 
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,8 +64,34 @@ export const Homepage = () => {
         setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
     };
 
+    const [showLoginForm, setShowLoginForm] = useState(false);
+    const Router = useNavigate();
+
+    const handleAccountClick = () => {
+        setShowLoginForm(!showLoginForm);
+    };
+
+    function handleRegister() {
+        Router('/register');
+    }
+
+    function handleLogin() {
+        Router('/Login');
+    }
+
+    function handleLogout() {
+        localStorage.removeItem("CurrentUser");
+        Router('/');
+        alert("Logged out successfully");
+    }
+
+    // Get the username from local storage if available
+    const currentUser = JSON.parse(localStorage.getItem("CurrentUser"));
+    const username = currentUser ? currentUser.currentUserName : "";
+
+
     return (
-        <div>
+        <div id="bg">
             <div class="logo">
                 <p id="Logo">नणंदकर शू मार्ट</p>
                 <div id="ilogo">
@@ -89,24 +136,39 @@ export const Homepage = () => {
                 <div id="sale">
                     SALE
                 </div>
-                <div id="men">
+                <div id="men" onClick={handlemen}>
                     MEN
                 </div>
-                <div id="women">
+                <div id="women" onClick={handlewomen}>
                     WOMEN
                 </div>
-                <div id="kids">
+                <div id="kids" onClick={handlekids}>
                     KIDS
                 </div>
-                <div id="newL">
+                <div id="newL" onClick={handlenew}>
                     NEWLY LAUNCHED
                 </div>
                 <div id="loginicon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                    <svg onClick={handleAccountClick} xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
                         <path
                             d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z">
                         </path>
                     </svg>
+                    <span>{username}</span>
+
+                    {showLoginForm && (
+                        <div class="LoginForm">
+
+
+                            <div>
+                                <button onClick={handleLogin} id="T10">Login</button>
+                                <button onClick={handleRegister} id="T10">Register</button>
+                                <button id="T10" onClick={handleLogout}>Logout</button>
+                            </div>
+
+                        </div>
+                    )}
+
                 </div>
 
 
@@ -187,89 +249,95 @@ export const Homepage = () => {
                     <div id="sibdiv4">
                         MRP
                         Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.1,349.00<br /> ( 50% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
                 </div>
             </div>
 
             <div>
+                <div>
+                    <img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw78fb320b/images/home/Line-Design.svg" />
+                </div>
                 <h2>Best Sellers (Women)</h2>
             </div>
 
             <div class="bestsellers">
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">Heals</div>
+                    <div id="sibdiv2"><img id="imgfs" src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=undefined,height=undefined,quality=75,format=auto,fit=cover,g=top/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/ProductImages/Source/82525A52_1_2_nw.jpeg" /></div>
+                    <div id="sibdiv3"> WOMEN'S HIGH HEEL </div>
                     <div id="sibdiv4">
                         MRP
-                        Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.1839.00
+                        Rs.2,299.00 <br />  ( 20% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">Pumpies</div>
+                    <div id="sibdiv2"><img id="imgfs" src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=undefined,height=undefined,quality=75,format=auto,fit=cover,g=top/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/ProductImages/Source/61528A01_1_2_nw.jpeg" /></div>
+                    <div id="sibdiv3">WOMEN'S PUMP SHOE </div>
                     <div id="sibdiv4">
                         MRP
-                        Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.1490.00
+                        Rs.1,192.00 <br />  ( 50% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">Sandals</div>
+                    <div id="sibdiv2"><img id="imgfs" src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=undefined,height=undefined,quality=75,format=auto,fit=cover,g=top/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/ProductImages/Source/62552A77_1_2_nw.jpeg" /></div>
+                    <div id="sibdiv3">WOMEN'S PEEP TOE SANDAL </div>
                     <div id="sibdiv4">
                         MRP
-                        Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.399.00
+                        Rs.799.00<br />  ( 50% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">Sport shoe </div>
+                    <div id="sibdiv2"><img id="imgfs" src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=undefined,height=undefined,quality=75,format=auto,fit=cover,g=top/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/ProductImages/Source/64550A29_2_nw.jpeg" /></div>
+                    <div id="sibdiv3">WOMEN'S SPORTS SHOE </div>
                     <div id="sibdiv4">
                         MRP
                         Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.1,349.00 <br /> ( 50% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">Canvas</div>
+                    <div id="sibdiv2"><img id="imgfs" src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=undefined,height=undefined,quality=75,format=auto,fit=cover,g=top/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/ProductImages/Source/63580A43_1_2_nw.jpeg" /></div>
+                    <div id="sibdiv3"> WOMEN'S CANVAS</div>
                     <div id="sibdiv4">
                         MRP
-                        Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.479.00
+                        Rs.599.00 <br />  ( 50% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">Slipper</div>
+                    <div id="sibdiv2"><img id="imgfs" src="https://staticm2.paragonfootwear.com/media/catalog/product/cache/3a88550bbe8642ae5e71ba6d62fc1851/p/u/pu7941l_black_1.jpg" /></div>
+                    <div id="sibdiv3">Slipper </div>
                     <div id="sibdiv4">
                         MRP
-                        Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.157.00
+                        Rs.175.00 <br /> ( 10% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
+            </div>
+            <div>
+                <img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw78fb320b/images/home/Line-Design.svg" />
             </div>
 
             <div>
@@ -278,77 +346,80 @@ export const Homepage = () => {
 
             <div class="bestsellers">
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">Sandal</div>
+                    <div id="sibdiv2"><img id="imgfs" src="http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-LP1674-Pink-Kids_1.jpg" /></div>
+                    <div id="sibdiv3">LP1674 </div>
                     <div id="sibdiv4">
                         MRP
                         Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.1,349.00 <br />  ( 50% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">Casual Shoes</div>
+                    <div id="sibdiv2"><img id="imgfs" src="https://staticm2.paragonfootwear.com/media/catalog/product/cache/3a88550bbe8642ae5e71ba6d62fc1851/a/1/a1pv2704cpnyb00018g174_1.jpg" /></div>
+                    <div id="sibdiv3">Navy Blue Fookids </div>
                     <div id="sibdiv4">
                         MRP
-                        Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.165.00
+                        Rs.174.00 <br />  ( 5% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">Shoes</div>
+                    <div id="sibdiv2"><img id="imgfs" src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=undefined,height=undefined,quality=75,format=auto,fit=cover,g=top/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/ProductImages/Source/41595A41_4.jpeg" /></div>
+                    <div id="sibdiv3">BOY'S CASUAL SHOE </div>
                     <div id="sibdiv4">
                         MRP
-                        Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.299.00
+                        Rs.349.00 <br />  ( 17% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">Slipper</div>
+                    <div id="sibdiv2"><img id="imgfs" src="https://staticm2.paragonfootwear.com/media/catalog/product/cache/3a88550bbe8642ae5e71ba6d62fc1851/a/1/a1hw0183bpylw00002g125_5.jpg" /></div>
+                    <div id="sibdiv3"> Yellow Flip-Flops</div>
                     <div id="sibdiv4">
                         MRP
-                        Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.121.00
+                        Rs.135.00 <br />  ( 10% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">Sandal</div>
+                    <div id="sibdiv2"><img id="imgfs" src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=undefined,height=undefined,quality=75,format=auto,fit=cover,g=top/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/ProductImages/Source/42592A09_new_1.jpeg" /></div>
+                    <div id="sibdiv3">TWINKLER BOY'S SANDAL </div>
                     <div id="sibdiv4">
                         MRP
                         Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.1,349.00 <br />  ( 50% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">Shoes</div>
+                    <div id="sibdiv2"><img id="imgfs" src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=undefined,height=undefined,quality=75,format=auto,fit=cover,g=top/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/ProductImages/Source/41525A38_new_4.jpeg" /></div>
+                    <div id="sibdiv3">TWINKLER BOY'S CASUAL  </div>
                     <div id="sibdiv4">
                         MRP
-                        Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.769.00
+                        Rs.1099.00 <br />  ( 30% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
+            </div>
+            <div>
+                <img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw78fb320b/images/home/Line-Design.svg" />
             </div>
             <div>
                 <h2>Newly launched</h2>
@@ -356,77 +427,84 @@ export const Homepage = () => {
 
             <div class="bestsellers">
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">NEW</div>
+                    <div id="sibdiv2"><img id="imgfs" src="https://staticm2.paragonfootwear.com/media/catalog/product/cache/5074d18cfdcf25b731fc457aa81f59f8/p/u/pu7126l_blu_1.jpg" /></div>
+                    <div id="sibdiv3">Blue Fabric Rexine </div>
                     <div id="sibdiv4">
                         MRP
-                        Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.202.00
+                        Rs.269.00 <br />  ( 25% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">NEW</div>
+                    <div id="sibdiv2"><img id="imgfs" src="https://staticm2.paragonfootwear.com/media/catalog/product/cache/3a88550bbe8642ae5e71ba6d62fc1851/k/3/k3307l_pnk_2.jpg" /></div>
+                    <div id="sibdiv3"> Flip flops for Women</div>
                     <div id="sibdiv4">
                         MRP
-                        Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.314.00
+                        Rs.349.00 <br />  ( 10% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">NEW</div>
+                    <div id="sibdiv2"><img id="imgfs" src="http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-GP4655-Brown-Gents_1.jpg" /></div>
+                    <div id="sibdiv3">GP4655 </div>
                     <div id="sibdiv4">
                         MRP
-                        Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.719.00
+                        Rs.899 <br />  ( 20% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">NEW</div>
+                    <div id="sibdiv2"><img id="imgfs" src="http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-LP1615-Blue-Ladies_1.jpg" /></div>
+                    <div id="sibdiv3">LP1615 </div>
                     <div id="sibdiv4">
                         MRP
-                        Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.509.00
+                        Rs.599.00 <br />  ( 50% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">NEW</div>
+                    <div id="sibdiv2"><img id="imgfs" src="https://staticm2.paragonfootwear.com/media/catalog/product/cache/3a88550bbe8642ae5e71ba6d62fc1851/e/v/ev1120g_black_1_1.jpg" /></div>
+                    <div id="sibdiv3"> Paralite Flip-Flops</div>
                     <div id="sibdiv4">
                         MRP
-                        Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.149.00
+                        Rs.199.00 <br />  ( 25% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
                 <div id="maindiv">
-                    <div id="sibdiv1"></div>
-                    <div id="sibdiv2"><img id="imgfs" src="" /></div>
-                    <div id="sibdiv3"> </div>
+                    <div id="sibdiv1">NEW</div>
+                    <div id="sibdiv2"><img id="imgfs" src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=undefined,height=undefined,quality=75,format=auto,fit=cover,g=top/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/ProductImages/Source/42525A68_4_nw.jpeg" /></div>
+                    <div id="sibdiv3">TWINKLER BOY'S SANDAL </div>
                     <div id="sibdiv4">
                         MRP
-                        Rs.675.00
-                        Rs.1,349.00 ( 50% off )
+                        Rs.1,086.00
+                        Rs.1,449.00 <br />  ( 25% off )
                     </div>
                     <div id="sibdiv5">Incl. of all taxes</div>
 
                 </div>
+
+            </div>
+            <div>
+                <img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw78fb320b/images/home/Line-Design.svg" />
+            </div>
+            <div className="corner-div" onClick={handlechat}>
+                Need help ?
             </div>
 
 
@@ -453,6 +531,9 @@ export const Homepage = () => {
 
 
 
+
+            <Footer/>
         </div>
+       
     )
 }
