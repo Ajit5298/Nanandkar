@@ -9,11 +9,11 @@ import { Registration } from './Components/Ragistration';
 import ConnectUsPage from './Components/ConnectUs';
 import { Navbar } from './Components/Navbar';
 import Chat from './Components/Chat';
-import { Men } from './Components/Men';
 import { Women } from './Components/Women';
 import { Kids } from './Components/Kids';
 import { New } from './Components/New';
 import Sidebar from './Components/Sidebar';
+import { Men } from './Components/Men';
 
 
 
@@ -30,11 +30,11 @@ function App() {
         <Route excat path='conectus' element={<ConnectUsPage />} />
         <Route excat path='nav' element={<Navbar />} />
         <Route excat path='chat' element={<Chat/>} />
-        <Route excat path='men' element={<Men/>} />
         <Route excat path='women' element={<Women/>} />
         <Route excat path='kids' element={<Kids/>} />
         <Route excat path='new' element={<New/>} />
         <Route excat path='sidebar' element={<Sidebar/>} />
+        <Route excat path='men' element={<Men/>} />
      
         
         

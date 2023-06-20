@@ -221,14 +221,17 @@
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-evenly;
+    margin-left: 20px;
     margin-top: 25px;
-    
+   flex-wrap: wrap;
+        
   }
   .bestsellers>div{
     border:1px solid rgba(255, 255, 255, 0.99);
     width: 15%;
     background-color: white !important;
+    margin-right:22px;
+    margin-top: 20px;
   }
   #sibdiv1
   {
@@ -694,3 +697,94 @@ height: auto;
 }
 
 
+/* ......................................JSON product..................................... */
+.bestseller
+  {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+   flex-wrap: wrap;
+        
+  }
+  .bestseller>div{
+    border:1px solid rgba(255, 255, 255, 0.99);
+    width: 18%;
+    background-color: white !important;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  #sibdi1
+  {
+    border:1px solid rgba(186, 180, 180, 0.99);
+    border-bottom: none;
+    height: 8vh;
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+    
+
+   
+  }
+  #sibdi2
+  {
+    border:1px solid rgba(186, 180, 180, 0.99);
+    height: 25vh;
+    width: 100%;
+   position:relative;
+   cursor: pointer;
+  }
+  #sibdi3
+  {
+    border:1px solid rgba(186, 180, 180, 0.99);
+    border-bottom: none;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #sibdi4
+  {
+    border:1px solid rgba(186, 180, 180, 0.99);
+    border-bottom: none;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #sibdi6
+  {
+    border:1px solid rgba(186, 180, 180, 0.99);
+    border-bottom: none;
+    border-top: none;
+    height: 3vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+  }
+  #sibdi5
+  {
+    border:1px solid rgba(186, 180, 180, 0.99);
+    height: 4vh;
+    width: 100%;
+     display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+  }
+ 
+  #imgf
+  {
+    width: 100%;
+    height: 25vh;
+  }
