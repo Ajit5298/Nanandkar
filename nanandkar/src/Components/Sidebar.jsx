@@ -42,15 +42,15 @@ const Sidebar = ({ handleFilter }) => {
           {showBrand && (
             <div className="subcategories">
               <label>
-                <input type="radio" value="Pragon" onChange={() => handleBrandFilter('Pragon')} />
+                <input type="radio" value="Pragon"  />
                 Pragon
               </label>
               <label>
-                <input type="radio" value="VKC" onChange={() => handleBrandFilter('VKC')} />
+                <input type="radio" value="VKC"  />
                 VKC
               </label>
               <label>
-                <input type="radio" value="Relaxo" onChange={() => handleBrandFilter('Relaxo')} />
+                <input type="radio" value="Relaxo"  />
                 Relaxo
               </label>
             </div>
@@ -66,19 +66,19 @@ const Sidebar = ({ handleFilter }) => {
           {showCategory && (
             <div className="subcategories">
               <label>
-                <input type="radio" value="Chappals" onChange={() => handleCategoryFilter('Chappals')} />
+                <input type="radio" value="Chappals"  />
                 Chappal
               </label>
               <label>
-                <input type="radio" value="Sandals" onChange={() => handleCategoryFilter('Sandals')} />
+                <input type="radio" value="Sandals" />
                 Sandal
               </label>
               <label>
-                <input type="radio" value="Shoes" onChange={() => handleCategoryFilter('Shoes')} />
+                <input type="radio" value="Shoes"  />
                 Shoes
               </label>
               <label>
-                <input type="radio" value="Slippers" onChange={() => handleCategoryFilter('Slippers')} />
+                <input type="radio" value="Slippers"  />
                 Shoes
               </label>
               
@@ -95,51 +95,51 @@ const Sidebar = ({ handleFilter }) => {
           {showColor && (
             <div className="subcategories">
               <label>
-                <input type="radio" value="Red" onChange={() => handleColorFilter('Red')} />
+                <input type="radio" value="Red"  />
                 Red
               </label>
               <label>
-                <input type="radio" value="Blue" onChange={() => handleColorFilter('Blue')} />
+                <input type="radio" value="Blue"  />
                 Blue
               </label>
               <label>
-                <input type="radio" value="Green" onChange={() => handleColorFilter('Green')} />
+                <input type="radio" value="Green"  />
                 Green
               </label>
               <label>
-                <input type="radio" value="Yellow" onChange={() => handleColorFilter('Yellow')} />
+                <input type="radio" value="Yellow"  />
                 Yellow
               </label>
               <label>
-                <input type="radio" value="Orange" onChange={() => handleColorFilter('Orange')} />
+                <input type="radio" value="Orange"  />
                 Orange
               </label>
               <label>
-                <input type="radio" value="Purple" onChange={() => handleColorFilter('Purple')} />
+                <input type="radio" value="Purple"  />
                 Purple
               </label>
               <label>
-                <input type="radio" value="Pink" onChange={() => handleColorFilter('Pink')} />
+                <input type="radio" value="Pink"  />
                 Pink
               </label>
               <label>
-                <input type="radio" value="Brown" onChange={() => handleColorFilter('Brown')} />
+                <input type="radio" value="Brown" />
                 Brown
               </label>
               <label>
-                <input type="radio" value="Black" onChange={() => handleColorFilter('Black')} />
+                <input type="radio" value="Black"  />
                 Black
               </label>
               <label>
-                <input type="radio" value="White" onChange={() => handleColorFilter('White')} />
+                <input type="radio" value="White"  />
                 White
               </label>
               <label>
-                <input type="radio" value="Gray" onChange={() => handleColorFilter('Gray')} />
+                <input type="radio" value="Gray" />
                 Gray
               </label>
               <label>
-                <input type="radio" value="Silver" onChange={() => handleColorFilter('Silver')} />
+                <input type="radio" value="Silver"  />
                 Silver
               </label>
             </div>
@@ -155,35 +155,35 @@ const Sidebar = ({ handleFilter }) => {
           {showSize && (
             <div className="subcategories">
              <label>
-                <input type="radio" value="5" onChange={() => handleSizeFilter('5')} />
+                <input type="radio" value="5"  />
                 5
               </label>
               <label>
-                <input type="radio" value="6" onChange={() => handleSizeFilter('6')} />
+                <input type="radio" value="6"  />
                 6
               </label>
               <label>
-                <input type="radio" value="7" onChange={() => handleSizeFilter('7')} />
+                <input type="radio" value="7"  />
                 7
               </label>
               <label>
-                <input type="radio" value="8" onChange={() => handleSizeFilter('8')} />
+                <input type="radio" value="8"  />
                 8
               </label>
               <label>
-                <input type="radio" value="9" onChange={() => handleSizeFilter('9')} />
+                <input type="radio" value="9"  />
                 9
               </label>
               <label>
-                <input type="radio" value="10" onChange={() => handleSizeFilter('10')} />
+                <input type="radio" value="10"  />
                 10
               </label>
               <label>
-                <input type="radio" value="11" onChange={() => handleSizeFilter('11')} />
+                <input type="radio" value="11"  />
                 11
               </label>
               <label>
-                <input type="radio" value="12" onChange={() => handleSizeFilter('12')} />
+                <input type="radio" value="12"  />
                 12
               </label>
             </div>
@@ -199,19 +199,19 @@ const Sidebar = ({ handleFilter }) => {
           {showPriceRange && (
             <div className="subcategories">
               <label>
-                <input type="radio" value="0 - 499" onChange={() => handlePriceRangeFilter('0 - 499')} />
+                <input type="radio" value="0 - 499"  />
                 Under- Rs.499
               </label>
               <label>
-                <input type="radio" value="500 - 999" onChange={() => handlePriceRangeFilter('500 - 999')} />
+                <input type="radio" value="500 - 999"  />
                 Rs. 500 - 999
               </label>
               <label>
-                <input type="radio" value="1000 - 1999" onChange={() => handlePriceRangeFilter('1000 - 1999')} />
+                <input type="radio" value="1000 - 1999"  />
                 Rs. 1000 - 1999
               </label>
               <label>
-                <input type="radio" value="2000 - 3000" onChange={() => handlePriceRangeFilter('2000 - 3000')} />
+                <input type="radio" value="2000 - 3000" />
                 Rs. 2000 - 3000
               </label>
              

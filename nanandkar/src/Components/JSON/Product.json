@@ -1,5 +1,202 @@
 [
    
+    {
+        "id":1,
+        "type":"Slipper",
+        "img":"http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-GP4641-Black-Gents_1.jpg",
+        "info":"GP4641",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":2,
+        "type":"Slipper",
+        "img":"https://m.media-amazon.com/images/I/41uWjKRg8XL._AC_UL400_.jpg",
+        "info":"VKC Pride Men's Slipper",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":3,
+        "type":"Slipper",
+        "img":"http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-GP4023-Tan-Gents_%201.jpg",
+        "info":"GP4023r",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+   
+    {
+        "id":6,
+        "type":"Slipper",
+        "img":"http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-GP4626-Brown-Gents_1.jpg",
+        "info":"GP4626",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+   
+
+    {
+        "id":10,
+        "type":"Slipper",
+        "img":"http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-GP4416-Tan-Gents_1.jpg",
+        "info":"GP4416",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":11,
+        "type":"Slipper",
+        "img":"http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-GP4375-Black-Gents_1.jpg",
+        "info":"GP4375",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":12,
+        "type":"Slipper",
+        "img":"http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-GP4373-Brown-Gents_1.jpg",
+        "info":"GP4373",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":13,
+        "type":"Slipper",
+        "img":"http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-GP4362-Tan-Gents_1.jpg",
+        "info":"GP4362",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":7,
+        "type":"Slipper",
+        "img":"http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-GP4619-Blue-Gents_1.jpg",
+        "info":"GP4619",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":8,
+        "type":"Slipper",
+        "img":"http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-GP4618-Black-Gents_1.jpg",
+        "info":"GP4618",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":9,
+        "type":"Slipper",
+        "img":"http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-P7494-Black-Gents_1.jpg",
+        "info":"P7494",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":4,
+        "type":"Slipper",
+        "img":"http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-3065S-Tan-Gents_1.jpg",
+        "info":"3065S",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":5,
+        "type":"Slipper",
+        "img":"http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-GP4634-Grey-Gents_1.jpg",
+        "info":"GP4634",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":14,
+        "type":"Slipper",
+        "img":"http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-3170-Black-Gents_1.jpg",
+        "info":"3170",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":15,
+        "type":"Slipper",
+        "img":"http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-3509-Brown-Gents_1.jpg",
+        "info":"3509",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+    
+    {
+        "id":16,
+        "type":"Slipper",
+        "img":"http://vkcparivar.com/uploads/catlog/product/VKC%20Pride-GP4603-Blue-Gents_1.jpg",
+        "info":"GP4603",
+        "mrp":" MRP Rs.349.00 Rs.699.00",
+        "dis":"( 50% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":15,
+        "type":"SPARX",
+        "img":"https://dxkvlfvncvqr8.cloudfront.net/media/product-image/SS-615-BKOM-1.jpg",
+        "info":"Sandals for men ss-615",
+        "mrp":" MRP Rs.1399.00 ",
+        "dis":"( 0% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":15,
+        "type":"SPARX",
+        "img":"https://dxkvlfvncvqr8.cloudfront.net/media/product-image/SS-606-GBCP-1.jpg",
+        "info":"Sandals for men ss-606",
+        "mrp":" MRP Rs.999.00 ",
+        "dis":"( 0% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":15,
+        "type":"SPARX",
+        "img":"https://dxkvlfvncvqr8.cloudfront.net/media/product-image/SS-622-BKNO-1.jpg",
+        "info":"SPARX SANDALS FOR MEN SS622",
+        "mrp":" MRP Rs.949.00",
+        "dis":"( 0% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":15,
+        "type":"Shoes",
+        "img":"https://dxkvlfvncvqr8.cloudfront.net/media/product-image/SM-734-WHGY-1.jpg",
+        "info":"SPARX CASUAL SHOES FOR MEN SM-734",
+        "mrp":" MRP Rs.680.00",
+        "dis":"( 0% off )",
+        "tax":"Incl. of all taxes"
+    },
+    {
+        "id":15,
+        "type":"Slipper",
+        "img":"https://dxkvlfvncvqr8.cloudfront.net/media/product-image/SM-757-BKRD-1.jpg",
+        "info":"SPARX CASUAL SHOES FOR MEN SM-757",
+        "mrp":" MRP Rs.1220.00",
+        "dis":"( 0% off )",
+        "tax":"Incl. of all taxes"
+    }
+   
+    
+    
+    
     
 
     
