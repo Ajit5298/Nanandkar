@@ -13,6 +13,8 @@ export const Navbar = () => {
         setShowLoginForm(!showLoginForm);
     };
 
+
+
     function handleRegister() {
         Router('/register');
     }
@@ -20,32 +22,61 @@ export const Navbar = () => {
     function handleLogin() {
         Router('/Login');
     }
+    const [showMenu, setShowMenu] = useState(false);
 
+    const handleMenuToggle = () => {
+        setShowMenu(!showMenu);
+    };
     function handleLogout() {
         localStorage.removeItem("CurrentUser");
         Router('/');
         alert("Logged out successfully");
-      }
-      function handlemen() {
+    }
+    function handlemen() {
         Router('/Men');
-      }
-      function handlewomen() {
+    }
+    function handlewomen() {
         Router('/Women');
-      }
-      function handlekids() {
+    }
+    function handlekids() {
         Router('/Kids');
-      }
-      function handlenew() {
+    }
+    function handlenew() {
         Router('/New');
-      }
-      function handlechat() {
+    }
+    function handlechat() {
         Router('/Chat');
-      }
-  return (
-    <>
-     <div id="navbar">
+    }
+    function handleHome() {
+        Router('/');
+    }
+    return (
+        <>
+            <div id="navbar">
                 <div id="imglogo">
                     <img id="logoimg" src={img1} />
+                </div>
+                <div id="mmdiv">
+                    <div id="menu-icon" onClick={handleMenuToggle}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                            <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+                        </svg>
+                    </div>
+                    {showMenu && (
+                        <div id="dropdown-menu">
+                                <div onClick={handleRegister} id="menu-item">Register</div>
+                                <div onClick={handleLogin} id="menu-item">Login</div>
+                            <div onClick={handleHome} id="menu-item"> Home</div>
+                            <div onClick={handlemen} id="menu-item"> MEN</div>
+                            <div onClick={handlewomen} id="menu-item"> WOMEN</div>
+                            <div onClick={handlekids} id="menu-item">Kids</div>
+                            <div onClick={handlenew} id="menu-item">Newly LAUNCHED</div>
+                            <div onClick={handleLogout} id="menu-item">Logout</div>
+                          
+                        
+                            
+                        </div>
+                    )}
                 </div>
                 <div id="sale">
                     SALE
@@ -87,6 +118,6 @@ export const Navbar = () => {
 
 
             </div>
-    </>
-  )
+        </>
+    )
 }

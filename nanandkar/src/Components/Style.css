@@ -69,7 +69,7 @@
 }
 
 /* Mobile View */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .logo {
         flex-direction: column;
         height: auto;
@@ -111,12 +111,17 @@
 
 #logoimg {
     width: 18vw;
-    height: 10vh;
+    height: 12vh;
 }
 
 #navbar {
+  
     align-items: center;
     font-family: "poppins" sans-serif;
+    background-color: white ;
+    border:1px solid rgba(186, 180, 180, 0.13);
+    box-shadow:0 0 40px rgba(255,255,255,0.1);
+    height: 14vh;
 }
 
 #imglogo {
@@ -593,7 +598,7 @@ color: black;
   margin-top: 10px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1200px) {
   .chat-container {
     width: 100%;
     padding: 0 20px;
@@ -874,6 +879,142 @@ height: auto;
   .wishlist-heart.wishlist-active {
     color: red;
   }
+  /* .........................@media..................................... */
+  
+ 
+  
+#mmdiv
+{
+  display: none;
+}
+  
+  #menu-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  #menu-item:hover {
+    background-color: #f5f5f5;
+  }
   
 
+  @media (max-width: 1200px)
+  
+   {
+    #menu-icon {
+      cursor: pointer;
+      margin-right: 20px;
+    }
+    #mmdiv
+{
+  display:contents;
+}
+.logo{
+  display: none;
+}
+    
+    #dropdown-menu {
+      position:absolute ;
+      top: 80px;
+      right: 0;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      margin: 10px;
+      z-index: 1;
+    }
+    
+    #menu-item {
+      cursor: pointer;
+      padding: 8px 12px;
+    }
+    
+    /* Optional styling */
+    #menu-icon svg {
+      width: 24px;
+      height: 24px;
+    }
+    
+    #menu-item:hover {
+      background-color: #f5f5f5;
+    }
+    
+   
+  
+  #logoimg {
+      /* display: none; */
+      width: 40vw;
+      height: 12vh;
+  }
+  
+  #sale {
+      display: none;
+  }
+  
+
+  
+  #men {
+    display: none;
+  }
+  
+ 
+  
+  #women {
+     display: none;
+  }
+  
+  
+  
+  
+  #kids {
+    display: none;
+  }
+  
+  
+  
+  #newL {
+    display: none;
+  }
+  
+
+  
+  #loginicon {
+    display: none;
+      
+  }
+  }
+  /* ............................Navbar media........................................ */
+
+  @media (max-width: 1200px)
+  {
+    .bestsellers
+    {
+      width: 100%;
+      margin:0vh 9vh 0vh 14vh;
+    }
+    #maindiv
+    {
+      width: 30vh;
+      
+    }
+    .bestseller
+    {
+      width: 100%;
+      margin:0vh 9vh 0vh 14vh;
+    }
+    #maindi
+    {
+      width: 30vh;
+      
+    }
+    #ddd
+    {
+      display: none;
+    }
+    
+      .sidebar {
+        display: none;
+      }
+      
+    }
   
