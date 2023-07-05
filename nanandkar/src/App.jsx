@@ -14,6 +14,11 @@ import { Kids } from './Components/Kids';
 import { New } from './Components/New';
 import Sidebar from './Components/Sidebar';
 import { Men } from './Components/Men';
+import { ProductPage, SinglePage } from './Components/SinglePage';
+import CartPage, { AddToCartPage, Cart } from './Components/AddToCartPage';
+import { BuyNowPage } from './Components/BuyNowPage';
+
+
 
 
 
@@ -35,6 +40,14 @@ function App() {
         <Route excat path='new' element={<New/>} />
         <Route excat path='sidebar' element={<Sidebar/>} />
         <Route excat path='men' element={<Men/>} />
+        <Route excat path='singlepage' element={<ProductPage/>} />
+        <Route path="/products/:id" element={<ProductPage />} />
+        <Route excat path='cart' element={<Cart/>} />
+        <Route excat path='buynow' element={<BuyNowPage/>} />
+        <Route path="/" element={<Kids />} />
+        <Route path="/cart/:id" element={<Cart />} />
+        
+       
      
         
         

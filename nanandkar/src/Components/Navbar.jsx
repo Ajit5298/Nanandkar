@@ -50,6 +50,9 @@ export const Navbar = () => {
     function handleHome() {
         Router('/');
     }
+    function handleHomes() {
+        Router('/');
+    }
     return (
         <>
             <div id="navbar">
@@ -78,8 +81,8 @@ export const Navbar = () => {
                         </div>
                     )}
                 </div>
-                <div id="sale">
-                    SALE
+                <div id="sale" onClick={handleHomes}>
+                    Home
                 </div>
                 <div id="men" onClick={handlemen}>
                     MEN

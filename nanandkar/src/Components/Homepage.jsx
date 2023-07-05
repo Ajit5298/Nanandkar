@@ -60,7 +60,9 @@ export const Homepage = () => {
       function handlechat() {
         Router('/Chat');
       }
-
+      function handleHomes() {
+        Router('/');
+      }
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -160,8 +162,8 @@ export const Homepage = () => {
                         </div>
                     )}
                 </div>
-                <div id="sale">
-                    SALE
+                <div id="sale" onClick={handleHomes}>
+                    Home
                 </div>
                 <div id="men" onClick={handlemen}>
                     MEN
